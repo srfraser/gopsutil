@@ -99,7 +99,7 @@ func mustParseInt32(val string) int32 {
 }
 
 // Parse to uint64 without error
-func mustParseUint64(val string) uint64 {
+func MustParseUint64(val string) uint64 {
 	vv, _ := strconv.ParseInt(val, 10, 64)
 	return uint64(vv)
 }
